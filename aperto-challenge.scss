@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  background-color: #9999aa;
+  width: 100%;
+  top: 0;
+}
+
+.content {
+  height: auto;
+  background-color: #ffeeee;
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #99ffdd;
+}
