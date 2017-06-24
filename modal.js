@@ -1,8 +1,8 @@
 var modal = document.getElementById("modal-popup");
 
-var img = document.getElementById("modal-img");
+var button = document.getElementById("modal-button");
 var modalImg = document.getElementById("modal-img");
-img.onclick = function(){
+button.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
 }
