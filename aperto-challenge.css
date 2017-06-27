@@ -1,75 +1,69 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
-
 /* Variables */
-$content-color: #ffeeee;
-$frame-color: #ffbbbb;
-
 /* General Settings */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
-}
+  width: 100%; }
 
-p { font-family: Montserrat, sans-serif; }
+p {
+  font-family: Montserrat, sans-serif; }
 
 .tagline {
   font-family: Lobster, cursive;
-  margin: 0;
-}
+  margin: 0; }
 
 .center {
   display: block;
   margin: 0 auto;
-  text-align: center;
-}
+  text-align: center; }
 
-.left { float: left; }
+.left {
+  float: left; }
 
-.right { float: right; }
+.right {
+  float: right; }
 
 /* Structure */
 .header {
-  background-color: $frame-color;
+  background-color: #ffbbbb;
   height: 10%;
   top: 0;
-  width: 100%;
-}
+  width: 100%; }
 
 .footer {
-  background-color: $frame-color;
+  background-color: #ffbbbb;
   bottom: 0;
   height: 10%;
-  width: 100%;
-}
+  width: 100%; }
 
 .content {
-  background-color: $content-color;
-  height: auto;
-}
+  background-color: #ffeeee;
+  height: auto; }
 
 .component {
   border: 1px solid pink;
   overflow: hidden;
-  padding: 1em;
-}
+  padding: 1em; }
 
-.component_text { max-width: 70%; }
+.component_text {
+  max-width: 70%; }
 
-.component_img { height: 20em; }
+.component_img {
+  height: 20em; }
 
 /* Modal */
 .overlay {
   float: left;
-  width: 240px;
-}
+  width: 240px; }
 
-.overlay .modal-img { display: block; }
+.overlay .modal-img {
+  display: block; }
 
 .overlay .img-button {
-  height:20px;
+  height: 20px;
   left: -50%;
   margin: 160px -50px;
   opacity: 0;
@@ -78,20 +72,18 @@ p { font-family: Montserrat, sans-serif; }
   text-align: center;
   top: 50%;
   transition: opacity 500ms;
-  width:100px;
+  width: 100px;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
-  -webkit-transition: opacity 500ms;
-}
+  -webkit-transition: opacity 500ms; }
 
 .overlay:hover .img-button {
   cursor: pointer;
-  opacity: 0.8;
-}
+  opacity: 0.8; }
 
 .modal {
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   display: none;
   height: 100%;
   left: 0;
@@ -100,33 +92,30 @@ p { font-family: Montserrat, sans-serif; }
   padding-top: 100px;
   top: 0;
   width: 100%;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .modal-img_big {
   display: block;
   margin: auto;
   max-width: 700px;
-  width: 80%;
-}
+  width: 80%; }
 
 .modal-img_big {
   animation-duration: 0.6s;
   animation-name: zoom;
   -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-}
+  -webkit-animation-duration: 0.6s; }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
-}
-
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
 .close {
   color: #f1f1f1;
   font-size: 40px;
@@ -134,12 +123,12 @@ p { font-family: Montserrat, sans-serif; }
   right: 35px;
   top: 15px;
   transition: 0.3s;
-  position: absolute;
-}
+  position: absolute; }
 
 .close:hover,
 .close:focus {
   color: #bbb;
   cursor: pointer;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
+/*# sourceMappingURL=aperto-challenge.css.map */
