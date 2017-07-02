@@ -11,10 +11,10 @@
     </header>
     <div class="content">
 
-      <div class="component">
+      <div class="component" id="comp">
         <div class="overlay">
-          <img id="img_small" class="component_img left" src="fernsehturm.jpg" alt="Fernsehturm">
-          <button id="modal-button" type="button" class="img-button">Enlarge</a>
+          <img id="img_small1" class="component_img left" src="fernsehturm.jpg" alt="Fernsehturm">
+          <button id="modal-button1" type="button" class="img-button" onclick="enlargeImg(this.previousElementSibling)">Enlarge</a>
         </div>
         <div id="modal-popup" class="modal">
           <span class="close" onclick="document.getElementById('modal_popup').style.display='none'">&times;</span>
@@ -36,8 +36,8 @@
           </p>
       </div>
       <div class="overlay">
-        <img class="component_img right" src="alex.jpg" alt="Fernsehturm">
-        <button id="modal-button" type="button" class="img-button">Enlarge</a>
+        <img id="img_small2" class="component_img right" src="alex.jpg" alt="Fernsehturm">
+        <button id="modal-button" type="button" class="img-button" onclick="enlargeImg(this.previousElementSibling)">Enlarge</a>
       </div>
       <div id="modal-popup" class="modal">
         <span class="close" onclick="document.getElementById('modal_popup').style.display='none'">&times;</span>
@@ -47,8 +47,8 @@
 
       <div class="component">
         <div>
-          <img class="component_img center" src="home.jpg" alt="Fernsehturm">
-          <button id="modal-button" type="button" class="img-button">Enlarge</a>
+          <img id="img_small3" class="component_img center" src="home.jpg" alt="Fernsehturm">
+          <button id="modal-button" type="button" class="img-button" onclick="enlargeImg(this.previousElementSibling)">Enlarge</a>
         </div>
         <h1>Komponent 3</h1>
         <p>

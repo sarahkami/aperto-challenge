@@ -1,13 +1,22 @@
 var modal = document.getElementById("modal-popup");
+var imgSrc = document.getElementsByClassName("component_img");
 
-var button = document.getElementById("modal-button");
-var smallImg = document.getElementById("img_small");
-var modalImg = document.getElementById("modal-img");
-button.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = smallImg.src;
+
+function enlargeImg(clickedId) {
+  var smallImg = document.getElementById("img_small");
+  // var overlay = document.querySelectorAll('.img-button')[0].previousElementSibling;
+  modal.style.display = "block";
+  clickedId.src = smallImg.src;
 }
 
+// var button = document.getElementsById("modal-button");
+// var smallImg = document.getElementById("img_small");
+// var modalImg = document.getElementById("modal-img1");
+// button.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = smallImg.src;
+// }
+//
 var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() {
